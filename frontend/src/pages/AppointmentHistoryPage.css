@@ -1,0 +1,72 @@
+.appointment-history-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+.appointment-history-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.appointment-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.appointment-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.appointment-summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.appointment-details p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+.toggle-details {
+  font-size: 14px;
+  color: #007bff;
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle-details:hover {
+  text-decoration: underline;
+}
+
+.appointment-expanded-details {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+  color: #444;
+}
+
+.appointment-expanded-details p {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.no-appointments-text {
+  color: #888;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+}

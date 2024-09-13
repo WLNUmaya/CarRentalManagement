@@ -1,0 +1,224 @@
+/* General header styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+.logo {
+    height: 50px;
+    transition: height 0.3s ease;
+}
+
+.nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    margin-right: -70px; /* Push nav items to the right */
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-item {
+    margin: 0 30px; /* Increase spacing between nav items */
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #0489a6;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #333;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.icon {
+    margin: 0 10px; /* Adjust margin between icons */
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.icon:hover {
+    color: #0489a6;
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 12px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 35px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    display: none; /* Hide dropdowns by default */
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-item {
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show dropdown-menu only for the active dropdown */
+.icon-container .dropdown-menu {
+    display: block;
+}
+
+.mark-read-button {
+    background: none;
+    border: none;
+    color: #0489a6;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.mark-read-button:hover {
+    color: #333;
+}
+
+/* Ensure the dropdown menus don't overlap */
+.icon-container .icon:nth-child(1) .dropdown-menu {
+    right: 50px; /* Position the notification dropdown slightly left */
+}
+
+.icon-container .icon:nth-child(2) .dropdown-menu {
+    right: 0px; /* Position the settings dropdown directly under the icon */
+}
+
+.notification-popup {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .notification-popup-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .notification-popup-content p {
+    margin-bottom: 15px;
+  }
+  
+  .notification-popup-content button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .notification-popup-content button:hover {
+    background-color: #0056b3;
+  }
+  
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .nav-container {
+        margin-right: 10px; /* Adjust margin for mobile view */
+    }
+
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 10px 0; /* Adjust spacing for mobile view */
+    }
+
+    .icon {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .dropdown-menu {
+        top: 40px;
+        width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        height: 35px;
+    }
+
+    .icon {
+        font-size: 18px;
+    }
+
+    .dropdown-menu {
+        top: 45px;
+        width: 160px;
+    }
+}

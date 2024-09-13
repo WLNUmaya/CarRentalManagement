@@ -1,0 +1,248 @@
+
+
+.detail-page-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+  background-image: url(''); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh; 
+  width: 100%;
+  margin-top: 200px;
+}
+
+
+
+.car-images-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: -10px; 
+  flex-shrink: 0; 
+}
+
+/* Large vehicle image styling */
+.vehicle-image-large {
+  width: 325px;
+  height: 242px;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Thumbnails styling */
+.car-images-thumbnails {
+  display: flex;
+  gap: 10px;
+}
+
+.vehicle-image-thumbnail {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  margin-top: -10px;
+}
+
+/* Car details box styling */
+.car-details-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  width: 306px;
+  min-height: 350px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px #0000001a;
+  box-sizing: border-box;
+  margin-right: 50px; 
+}
+
+/* Car name styling */
+.car-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Car price styling */
+.car-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0489A6;
+  margin-bottom: 15px;
+}
+
+/* Car description styling */
+.car-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Car features styling */
+.car-features {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.car-specs,
+.car-extra-features {
+  font-size: 14px;
+  color: #666;
+}
+
+.car-extra-features h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.car-extra-features ul {
+  padding-left: 20px;
+}
+
+.car-extra-features li {
+  list-style-type: disc;
+}
+
+/* Car price container styling */
+.car-price-container {
+  margin-top: 20px;
+}
+
+/* Other form and button styles remain unchanged */
+.detail-page-form-container {
+  flex: 1;
+  margin-top: 0px;
+}
+
+/* Form container style when hidden */
+.detail-page-hidden {
+  display: none;
+}
+
+/* Form title style */
+.detail-page-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+/* Form text style */
+.detail-page-text {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Form label style */
+.detail-page-label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+/* Form input style */
+/* Form input style with added margin for spacing */
+.detail-page-input {
+  background-color: #F6F7F9;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  
+}
+
+/* Remove margin-bottom from the last input */
+.detail-page-input:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Button style */
+.detail-page-button {
+  background-color: #0489A6;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+/* Confirmation button style */
+.detail-page-button-confirmation {
+  background-color: #0489A6;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Title style for confirmation */
+.detail-page-title-confirmation {
+  font-weight: bold;
+  margin-bottom: 7px;
+  font-size: 15px;
+}
+
+/* Text style for confirmation */
+.detail-page-text-confirmation {
+  font-size: 12px;
+  color: #90A3BF;
+  margin-bottom: 20px;
+}
+
+.error-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.error-popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.error-popup-content h3 {
+  margin-top: 0;
+}
+
+.error-popup-content button {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error-popup-content button:hover {
+  background-color: #0056b3;
+}

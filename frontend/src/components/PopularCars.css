@@ -1,0 +1,132 @@
+/* Apply box-sizing globally */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Define the fade-in animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply the animation class */
+.animate-on-scroll {
+    opacity: 0; /* Start hidden */
+    animation: fadeInUp 0.5s ease-out forwards; /* Slow animation with delay */
+    animation-delay: 0.5s; /* Optional: Add delay before the animation starts */
+}
+
+/* Style for the vehicle box */
+.vehicle-box {
+    width: 300px; /* Fixed width */
+    height: 315px; /* Fixed height */
+    padding: 20px;
+    margin: 10px;
+    background-color: #ffffff; /* White background */
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow effect */
+    position: relative;
+    /* Ensure consistent box sizing */
+    box-sizing: border-box;
+}
+
+/* Style for vehicle information */
+.vehicle-info {
+    text-align: left;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: calc(100% - 40px); /* Adjust width to fit within box */
+}
+
+.vehicle-info h3 {
+    font-size: 1.2rem;
+    margin: 0px;
+    font-weight: 500;
+}
+
+.vehicle-info p {
+    font-size: 1rem;
+    margin: -5px 0;
+    color: #6c757d; /* Ash color */
+}
+
+/* Style for vehicle image */
+.vehicle-image {
+    width: 100%;
+    height: 90px; /* Fixed height for image */
+    object-fit: contain; /* Ensures the entire image fits without cropping */
+    border-radius: 8px;
+    overflow: hidden; /* Hide any overflow */
+    margin: 80px 0; /* Reduce margin to bring image closer to top */
+}
+
+/* Style for vehicle details */
+.vehicle-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Adjust gap between type and capacity */
+    margin: -50px 0; /* Reduce margin to bring details closer to image */
+}
+
+.vehicle-details p {
+    font-size: 0.9rem;
+    color: #6c757d; /* Ash color */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between icon and text */
+}
+
+/* Style for capacity */
+.capacity {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between people icon and capacity text */
+}
+
+/* Style for rent button container */
+.rent-button-container {
+    display: flex;
+    align-items: center; /* Align items in the center vertically */
+    gap: 10px; /* Space between price and button */
+    margin-top: auto; /* Push the rent button container to the bottom */
+}
+
+/* Style for rent button */
+.rent-button {
+    background-color: #2da9c5;
+    color: #fff;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+/* Style for rent button text */
+.rent-button-container p {
+    margin: 0;
+}
+
+/* Style for price */
+.price {
+    font-size: 1.1rem; /* Larger font size for price */
+    font-weight: bold; /* Bold text for price */
+}
+
+/* Style for /day text */
+.per-day {
+    font-size: 0.9rem; /* Smaller font size for /day */
+    color: #6c757d; /* Ash color for /day */
+}

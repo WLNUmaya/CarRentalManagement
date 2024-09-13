@@ -1,0 +1,22 @@
+/* Header.css */
+
+.nav-link {
+    color: #0489A6; /* Custom blue color */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s; /* Smooth color transition */
+    background: transparent; /* Ensure background is transparent */
+    border: none; /* Remove any border */
+    padding: 0; /* Remove padding if necessary */
+    margin: 0; /* Remove margin if necessary */
+  }
+  
+  .nav-link:hover {
+    color: #035f73; /* Darker shade of blue on hover */
+  }
+  
+  /* Optionally, if you need to remove any default styling or padding/margin */
+  .nav-link:focus,
+  .nav-link:active {
+    outline: none; /* Remove default focus outline */
+  }
+  

@@ -1,0 +1,337 @@
+/* General Page Styles */
+.page {
+    background-color: #ade5f1;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* General Oval Bar Styles */
+.oval-bar {
+    background-color: #FFFFFF;
+    height: 50px;
+    border-radius: 30px;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the left */
+    color: #333;
+    font-size: 12px;
+    padding: 20px 10px;
+    gap: 30px; /* Adjust gap between the containers */
+}
+
+/* Dropdown Container Base Style */
+.dropdown-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    flex-grow: 1;
+    text-align: left;
+    border-right: 1px solid #ddd; /* Border for separation */
+    justify-content: space-between; /* Space between text and icon inside the container */
+}
+
+/* Remove border from the last dropdown container */
+.dropdown-container:last-child {
+    border-right: none;
+}
+
+/* Dropdown Button */
+/* General Dropdown Button Icon Style */
+.dropdown-button .icon {
+    font-size: 14px; /* Set a consistent font size for all icons */
+    margin-left: auto; /* Push icon to the right */
+    transition: transform 0.3s ease;
+}
+
+/* Specific Dropdown Button Style */
+.dropdown-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    color: #333;
+    font-weight: bold;
+    font-size: 12px; /* Consistent font size */
+    transition: color 0.3s ease;
+}
+
+/* Rotate icon when dropdown is visible */
+.dropdown-button .icon.up {
+    transform: rotate(180deg);
+}
+
+.dropdown-button .icon.down {
+    transform: rotate(0);
+}
+
+/* Dropdown Styles */
+.dropdown {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 100%;
+    left: 0; /* Dropdown aligned to the left */
+    display: none;
+    z-index: 1;
+    width: max-content;
+    padding: 10px 10px;
+}
+
+/* Show dropdown */
+.dropdown-visible {
+    display: block;
+}
+
+/* Dropdown Items */
+.dropdown-item {
+    padding: 8px 70px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: left; /* Align text to the left */
+}
+
+/* Dropdown item hover effect */
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Dropdown Item Hover Effect */
+.dropdown-item:hover,
+.dropdown-item:focus {
+    background-color: #f0f0f0;
+    color: #0489A6;
+    outline: none;
+}
+
+/* Submit Button */
+.submit-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+}
+
+.button {
+    background-color: #34C9EA;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 25px;
+    padding: 7px 90px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.button:hover {
+    background-color: #036a85; /* Darker shade on hover */
+}
+
+/* Text Styles */
+.text {
+    text-align: left;
+    margin-top: 30px;
+    font-size: 60px;
+    color: #06819c;
+    font-weight: bold;
+    animation: fadeInUp 1s ease-out;
+}
+
+.additional-text {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 20px;
+    color: #19b8db;
+    font-weight: bold;
+    animation: fadeInUp 1s ease-out 0.5s;
+}
+
+/* Recommendation Container */
+.recommendation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.text1 {
+    text-align: left;
+    font-size: 16px; /* Increased font size for better readability */
+    color: #0489A6;
+    font-weight: bold;
+    animation: fadeIn 1s ease-out;
+}
+
+.text2 {
+    text-align: right;
+    font-size: 16px; /* Increased font size for better readability */
+    color: #0489A6;
+    font-weight: bold;
+    animation: fadeIn 1s ease-out 0.5s;
+}
+
+/* Show More Button */
+.show-more-button {
+    background-color: #0489A6;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Filtered Cars Container */
+.filtered-cars-container {
+    margin-top: 40px;
+}
+
+.filtered-cars-container h2 {
+    font-size: 28px; /* Adjust font size for visibility */
+    color: #0489A6; /* Match color with existing text styles */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Grid responsiveness */
+.grid {
+    display: grid;
+    gap: 20px; /* Space between grid items */
+}
+
+/* Grid responsiveness */
+.lg\\:grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.md\\:grid-cols-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.sm\\:grid-cols-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gap-5 {
+    gap: 20px; /* Adjust gap between grid items */
+}
+
+/* Popular Cars Component Styles */
+.popular-cars {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    padding: 15px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.popular-cars img {
+    width: 100%;
+    border-radius: 8px; /* Match border radius with component */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Recommended Cars Component Styles */
+.recommended-cars {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    padding: 15px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+.recommended-cars img {
+    width: 100%;
+    border-radius: 8px; /* Match border radius with component */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Text Image Container Styles */
+.text-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden; /* Ensure image does not overflow container */
+    animation: fadeIn 1s ease-out;
+}
+
+.text-content {
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px;
+    animation: slideInUp 1s ease-out;
+    margin-right: 550px;
+    margin-top: -60px;
+}
+
+.text-image {
+    width: 55%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10px;
+    animation: zoomIn 1.5s ease-out;
+    margin-left: 650px;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
